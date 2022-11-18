@@ -144,7 +144,7 @@
   "latest": 1
 },{
   "_id": {
-    "$oid": "637580263e1888420567c800"
+    "$oid": "6376800170fe1761aa12990c"
   },
   "acc_id": "632ad7d68e76c05df518e61b",
   "latest": 1,
@@ -152,15 +152,107 @@
     {
       "date": {
         "$date": {
-          "$numberLong": "1668644902317"
+          "$numberLong": "1668710400678"
         }
       },
-      "program_id": "t1",
-      "program_name": "t1",
+      "program_id": "test",
+      "program_name": "test",
       "project_id": "635f1caa33f610082870b53e",
-      "status": "Coding",
-      "system_analyst_id": "635f163fc94f7b7f55c2c430",
-      "system_id": "6360313fd15082419312f450",
+      "service_component": {
+        "class_diagram": "schema.jpg",
+        "context_root": "test",
+        "er_diagram": "er_diagrams.jpg",
+        "host": "test",
+        "port": "test",
+        "services": [
+          {
+            "action": "test",
+            "detail": {
+              "description": "test",
+              "example_response": "test",
+              "input_parameter": "test",
+              "method_name": "test"
+            },
+            "id": "1",
+            "service": "test"
+          }
+        ],
+        "title": "test"
+      },
+      "status": "Publish",
+      "system_analyst_id": "636032a6d15082419312f454",
+      "system_id": "635f1671c94f7b7f55c2c433",
+      "ui_component": {
+        "component_page": [
+          {
+            "action_table": [
+              {
+                "description": "เมื่อกดปุ่มค้นหาให้ทำการแสดงตารางและเรียก Service\n/api/queryRegisByCondition และแสดงผลข้อมูลที่ค้นหาได้",
+                "id": "1",
+                "action": "onSearch"
+              },
+              {
+                "description": "เมื่อกดปุ่ม ทำการ clear form, ตารางการแสดงผล และแสดงผลหน้าจอเริ่มต้น",
+                "id": "2",
+                "action": "onCancle"
+              },
+              {
+                "description": "เมื่อกดปุ่ม\n1. เปิดหน้าจอบันทึก\n2. Clear หน้าจอสำหรับการเพิ่มข้อมูล",
+                "id": "3",
+                "action": "onAdd"
+              }
+            ],
+            "component_table": [
+              {
+                "attribute": "searchBtn",
+                "event": "onSearch",
+                "id": "1",
+                "label": "ปุ่มค้นหา",
+                "property": "required"
+              },
+              {
+                "attribute": "cancelBtn",
+                "event": "onCancle",
+                "id": "2",
+                "label": "ปุ่มยกเลิก",
+                "property": ""
+              },
+              {
+                "attribute": "addBtn",
+                "event": "onAdd",
+                "id": "3",
+                "label": "ปุ่มเพิ่ม",
+                "property": ""
+              }
+            ],
+            "id": "1",
+            "image": "Untitled Diagram.jpg",
+            "name": "หน้าจอค้นหาข้อมูล"
+          },
+          {
+            "action_table": [
+              {
+                "description": "เมื่อกดปุ่ม\n1. เปิดหน้าจอแก้ไข\n2. ทำการค้นหาข้อมูลโดยเรียก Service /api/registrations/{id:Long}\n3. Set ค่าที่ได้จากการค้นหาให้กับหน้าจอ",
+                "id": "1",
+                "action": "onEdit"
+              }
+            ],
+            "component_table": [
+              {
+                "attribute": "editBtn",
+                "event": "onEdit",
+                "id": "1",
+                "label": "ปุ่มแก้ไข",
+                "property": "required"
+              }
+            ],
+            "id": "2",
+            "image": "tel.jpg",
+            "name": "ตารางแสดงรายการลงทะเบียน"
+          }
+        ],
+        "title": "Example UI Spec"
+      },
       "version": 1
     }
   ]
