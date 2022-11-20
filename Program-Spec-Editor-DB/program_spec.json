@@ -11,7 +11,7 @@
           "$numberLong": "1670173200000"
         }
       },
-      "program_id": "2",
+      "program_id": "6376800170fe10",
       "program_name": "Online Quiz Spec",
       "project_id": "635f1686c94f7b7f55c2c436",
       "ui_component": {},
@@ -27,7 +27,7 @@
           "$numberLong": "1667792332375"
         }
       },
-      "program_id": "1122",
+      "program_id": "6376800170fe10",
       "program_name": "Online Quiz Spec",
       "project_id": "635f1caa33f610082870b53e",
       "ui_component": {},
@@ -51,7 +51,7 @@
           "$numberLong": "1670173200000"
         }
       },
-      "program_id": "3",
+      "program_id": "6376800170fe14",
       "program_name": "Program Spec Editor",
       "ui_component": {},
       "service_component": {},
@@ -67,7 +67,7 @@
           "$numberLong": "1665546270636"
         }
       },
-      "program_id": "3",
+      "program_id": "6376800170fe14",
       "program_name": "Program Spec Editor",
       "ui_component": {},
       "service_component": {},
@@ -91,7 +91,7 @@
           "$numberLong": "1670173200000"
         }
       },
-      "program_id": "4",
+      "program_id": "6376800170fe15",
       "program_name": "PDF Editor Spec",
       "ui_component": {},
       "service_component": {},
@@ -107,7 +107,7 @@
           "$numberLong": "1665546292118"
         }
       },
-      "program_id": "4",
+      "program_id": "6376800170fe15",
       "program_name": "PDF Editor Spec",
       "ui_component": {},
       "service_component": {},
@@ -130,7 +130,7 @@
           "$numberLong": "1670173200000"
         }
       },
-      "program_id": "1",
+      "program_id": "6376800170fe16",
       "program_name": "PG Pool Service Spec",
       "status": "Coding Success",
       "ui_component": {},
@@ -155,29 +155,30 @@
           "$numberLong": "1668710400678"
         }
       },
-      "program_id": "test",
-      "program_name": "test",
+      "program_id": "6376800170fe17",
+      "program_name": "Online Score Board",
       "project_id": "635f1caa33f610082870b53e",
       "service_component": {
         "class_diagram": "schema.jpg",
-        "context_root": "test",
+        "context_root": "/รหัสนักศึกษา",
         "er_diagram": "er_diagrams.jpg",
-        "host": "test",
-        "port": "test",
+        "host": "http://127.0.0.1",
+        "port": "8080",
         "services": [
           {
-            "action": "test",
+            "action": "Action 1",
             "detail": {
-              "description": "test",
-              "example_response": "test",
-              "input_parameter": "test",
-              "method_name": "test"
+              "description": "1. ค้นหาข้อมูลโดยเรียก SQL\nselect student_id,CONCAT(first_name,' ',last_name) as full_name, birthdate,b.blood_id,\nb.blood_name,tel,email from student s left join blood b on s.blood_id = b.blood_id\norder by student_id\n2. Set ค่าที่ค้นหาได้ ใส่ List<StudentDto>\n3. Return List<StudentDto>",
+              "example_response": "",
+              "input_parameter": "",
+              "method_name": "getStudent"
             },
             "id": "1",
-            "service": "test"
+            "service": "{host}:{port}/{contextRoot}/api/student",
+            "method": "GET"
           }
         ],
-        "title": "test"
+        "title": "Service Specification"
       },
       "status": "Publish",
       "system_analyst_id": "636032a6d15082419312f454",
