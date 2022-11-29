@@ -32,7 +32,7 @@
       "project_id": "635f1caa33f610082870b53e",
       "ui_component": {},
       "service_component": {},
-      "status": "Coding",
+      "status": "Create",
       "system_analyst_id": "635f163fc94f7b7f55c2c430",
       "system_id": "635f1671c94f7b7f55c2c433",
       "version": 2
@@ -439,109 +439,6 @@
           }
         ],
         "title": "asd"
-      },
-      "version": 1
-    }
-  ]
-},{
-  "_id": {
-    "$oid": "637bff89d1b64b08520f5018"
-  },
-  "acc_id": "632ad7d68e76c05df518e61b",
-  "latest": 1,
-  "programs": [
-    {
-      "date": {
-        "$date": {
-          "$numberLong": "1669070729526"
-        }
-      },
-      "program_id": "asd",
-      "program_name": "asd",
-      "project_id": "635f1686c94f7b7f55c2c436",
-      "service_component": {
-        "class_diagram": "schema.jpg",
-        "context_root": "asd",
-        "er_diagram": "er_diagrams.jpg",
-        "host": "asd",
-        "port": "asd",
-        "services": [
-          {
-            "action": "asd",
-            "detail": {
-              "description": "asd",
-              "example_response": "asd",
-              "input_parameter": "asd",
-              "method_name": "asd"
-            },
-            "id": "1",
-            "method": "asd",
-            "service": "asd"
-          }
-        ],
-        "title": "asd"
-      },
-      "status": "Create",
-      "system_analyst_id": "636032a6d15082419312f454",
-      "system_id": "635f1671c94f7b7f55c2c433",
-      "ui_component": {
-        "component_page": [
-          {
-            "action_table": [
-              {
-                "action": "asd",
-                "description": "asd",
-                "id": "1"
-              },
-              {
-                "action": "asd",
-                "description": "asd",
-                "id": "2"
-              }
-            ],
-            "component_table": [
-              {
-                "attribute": "asd",
-                "event": "asd",
-                "id": "1",
-                "label": "asd",
-                "property": "asd"
-              },
-              {
-                "attribute": "asd",
-                "event": "asd",
-                "id": "2",
-                "label": "asd",
-                "property": "asd"
-              }
-            ],
-            "id": "1",
-            "image": "tel.jpg",
-            "name": "ASD"
-          },
-          {
-            "action_table": [
-              {
-                "action": "qwe",
-                "description": "qwe",
-                "id": "1"
-              }
-            ],
-            "component_table": [
-              {
-                "attribute": "qwe",
-                "event": "qwe",
-                "id": "1",
-                "label": "qwe",
-                "property": "qwe"
-              }
-            ],
-            "id": "2",
-            "image": "Untitled Diagram.jpg",
-            "name": "QWE"
-          }
-        ],
-        "title": "asdasd"
       },
       "version": 1
     }
