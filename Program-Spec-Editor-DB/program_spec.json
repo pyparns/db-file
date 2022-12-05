@@ -32,7 +32,7 @@
       "project_id": "635f1caa33f610082870b53e",
       "ui_component": {},
       "service_component": {},
-      "status": "Coding",
+      "status": "Create",
       "system_analyst_id": "635f163fc94f7b7f55c2c430",
       "system_id": "635f1671c94f7b7f55c2c433",
       "version": 2
@@ -147,7 +147,7 @@
     "$oid": "6376800170fe1761aa12990c"
   },
   "acc_id": "632ad7d68e76c05df518e61b",
-  "latest": 2,
+  "latest": 3,
   "programs": [
     {
       "date": {
@@ -259,12 +259,12 @@
     {
       "date": {
         "$date": {
-          "$numberLong": "1669662433612"
+          "$numberLong": "1669254959610"
         }
       },
       "program_id": "6376800170fe17",
       "program_name": "Online Score Board",
-      "project_id": "635f1caa33f610082870b53e",
+      "project_id": "63603327d15082419312f45a",
       "service_component": {
         "class_diagram": "schema.jpg",
         "context_root": "/รหัสนักศึกษา",
@@ -283,23 +283,13 @@
             "id": "1",
             "method": "GET",
             "service": "{host}:{port}/{contextRoot}/api/student"
-          },
-          {
-            "action": "Action 2",
-            "detail": {
-              "description": "1. ค้นหาข้อมูลโดยเรียก SQL\nselect student_id,CONCAT(first_name,' ',last_name) as full_name, birthdate,b.blood_id,\nb.blood_name,tel,email from student s left join blood b on s.blood_id = b.blood_id\norder by student_id\n2. Set ค่าที่ค้นหาได้ ใส่ List<StudentDto>\n3. Return List<StudentDto>",
-              "method_name": "regisStudent"
-            },
-            "id": "2",
-            "method": "POST",
-            "service": "{host}:{port}/{contextRoot}/api/student"
           }
         ],
         "title": "Service Specification"
       },
       "status": "Publish",
-      "system_analyst_id": "636032a6d15082419312f454",
-      "system_id": "635f1671c94f7b7f55c2c433",
+      "system_analyst_id": "636032bcd15082419312f456",
+      "system_id": "63603194d15082419312f452",
       "ui_component": {
         "component_page": [
           {
@@ -318,6 +308,10 @@
                 "action": "onAdd",
                 "description": "เมื่อกดปุ่ม\n1. เปิดหน้าจอบันทึก\n2. Clear หน้าจอสำหรับการเพิ่มข้อมูล",
                 "id": "3"
+              },
+              {
+                "action": "onDelete",
+                "id": "4"
               }
             ],
             "component_table": [
@@ -369,181 +363,121 @@
             "name": "ตารางแสดงรายการลงทะเบียน"
           }
         ],
-        "title": "Component Specification"
+        "title": "Example UI Specification"
       },
       "version": 2
-    }
-  ]
-},{
-  "_id": {
-    "$oid": "637bfbe7d1b64b08520f5017"
-  },
-  "acc_id": "632ad7d68e76c05df518e61b",
-  "latest": 1,
-  "programs": [
+    },
     {
       "date": {
         "$date": {
-          "$numberLong": "1669069799878"
+          "$numberLong": "1669859370901"
         }
       },
-      "program_id": "asd",
-      "program_name": "asd",
-      "project_id": "63603350d15082419312f45f",
+      "program_id": "6376800170fe17",
+      "program_name": "Online Score Board",
+      "project_id": "63603327d15082419312f45a",
       "service_component": {
         "class_diagram": "schema.jpg",
-        "context_root": "asd",
+        "context_root": "/รหัสนักศึกษา",
         "er_diagram": "er_diagrams.jpg",
-        "host": "asd",
-        "port": "asd",
+        "host": "http://127.0.0.1",
+        "port": "8080",
         "services": [
           {
-            "action": "asd",
+            "action": "Action 1",
             "detail": {
-              "description": "asd",
-              "example_response": "asd",
-              "input_parameter": "asd",
-              "method_name": "asd"
+              "description": "1. ค้นหาข้อมูลโดยเรียก SQL\nselect student_id,CONCAT(first_name,' ',last_name) as full_name, birthdate,b.blood_id,\nb.blood_name,tel,email from student s left join blood b on s.blood_id = b.blood_id\norder by student_id\n2. Set ค่าที่ค้นหาได้ ใส่ List<StudentDto>\n3. Return List<StudentDto>",
+              "example_response": "",
+              "input_parameter": "",
+              "method_name": "getStudent"
             },
             "id": "1",
-            "method": "asd",
-            "service": "asd"
+            "method": "GET",
+            "service": "{host}:{port}/{contextRoot}/api/student"
           }
         ],
-        "title": "asd"
+        "title": "Service Specification"
       },
-      "status": "Coding",
-      "system_analyst_id": "635f163fc94f7b7f55c2c430",
-      "system_id": "635f1dae33f610082870b540",
+      "status": "Publish",
+      "system_analyst_id": "636032bcd15082419312f456",
+      "system_id": "63603194d15082419312f452",
       "ui_component": {
         "component_page": [
           {
             "action_table": [
               {
-                "action": "asd",
-                "description": "asd",
-                "id": "1"
-              }
-            ],
-            "component_table": [
-              {
-                "attribute": "asd",
-                "event": "asd",
-                "id": "1",
-                "label": "asd",
-                "property": "asd"
-              }
-            ],
-            "id": "1",
-            "image": "tel.jpg"
-          }
-        ],
-        "title": "asd"
-      },
-      "version": 1
-    }
-  ]
-},{
-  "_id": {
-    "$oid": "637bff89d1b64b08520f5018"
-  },
-  "acc_id": "632ad7d68e76c05df518e61b",
-  "latest": 1,
-  "programs": [
-    {
-      "date": {
-        "$date": {
-          "$numberLong": "1669070729526"
-        }
-      },
-      "program_id": "asd",
-      "program_name": "asd",
-      "project_id": "635f1686c94f7b7f55c2c436",
-      "service_component": {
-        "class_diagram": "schema.jpg",
-        "context_root": "asd",
-        "er_diagram": "er_diagrams.jpg",
-        "host": "asd",
-        "port": "asd",
-        "services": [
-          {
-            "action": "asd",
-            "detail": {
-              "description": "asd",
-              "example_response": "asd",
-              "input_parameter": "asd",
-              "method_name": "asd"
-            },
-            "id": "1",
-            "method": "asd",
-            "service": "asd"
-          }
-        ],
-        "title": "asd"
-      },
-      "status": "Create",
-      "system_analyst_id": "636032a6d15082419312f454",
-      "system_id": "635f1671c94f7b7f55c2c433",
-      "ui_component": {
-        "component_page": [
-          {
-            "action_table": [
-              {
-                "action": "asd",
-                "description": "asd",
+                "action": "onSearch",
+                "description": "เมื่อกดปุ่มค้นหาให้ทำการแสดงตารางและเรียก Service\n/api/queryRegisByCondition และแสดงผลข้อมูลที่ค้นหาได้",
                 "id": "1"
               },
               {
-                "action": "asd",
-                "description": "asd",
+                "action": "onCancle",
+                "description": "เมื่อกดปุ่ม ทำการ clear form, ตารางการแสดงผล และแสดงผลหน้าจอเริ่มต้น",
                 "id": "2"
+              },
+              {
+                "action": "onAdd",
+                "description": "เมื่อกดปุ่ม\n1. เปิดหน้าจอบันทึก\n2. Clear หน้าจอสำหรับการเพิ่มข้อมูล",
+                "id": "3"
+              },
+              {
+                "action": "onDelete",
+                "description": "test",
+                "id": "4"
               }
             ],
             "component_table": [
               {
-                "attribute": "asd",
-                "event": "asd",
+                "attribute": "searchBtn",
+                "event": "onSearch",
                 "id": "1",
-                "label": "asd",
-                "property": "asd"
+                "label": "ปุ่มค้นหา",
+                "property": "required"
               },
               {
-                "attribute": "asd",
-                "event": "asd",
+                "attribute": "cancelBtn",
+                "event": "onCancle",
                 "id": "2",
-                "label": "asd",
-                "property": "asd"
+                "label": "ปุ่มยกเลิก",
+                "property": "test"
+              },
+              {
+                "attribute": "addBtn",
+                "event": "onAdd",
+                "id": "3",
+                "label": "ปุ่มเพิ่ม",
+                "property": "test"
               }
             ],
             "id": "1",
-            "image": "tel.jpg",
-            "name": "ASD"
+            "image": "Untitled Diagram.jpg",
+            "name": "หน้าจอค้นหาข้อมูล"
           },
           {
             "action_table": [
               {
-                "action": "qwe",
-                "description": "qwe",
+                "action": "onEdit",
+                "description": "เมื่อกดปุ่ม\n1. เปิดหน้าจอแก้ไข\n2. ทำการค้นหาข้อมูลโดยเรียก Service /api/registrations/{id:Long}\n3. Set ค่าที่ได้จากการค้นหาให้กับหน้าจอ",
                 "id": "1"
               }
             ],
             "component_table": [
               {
-                "attribute": "qwe",
-                "event": "qwe",
+                "attribute": "editBtn",
+                "event": "onEdit",
                 "id": "1",
-                "label": "qwe",
-                "property": "qwe"
+                "label": "ปุ่มแก้ไข",
+                "property": "required"
               }
             ],
             "id": "2",
-            "image": "Untitled Diagram.jpg",
-            "name": "QWE"
+            "image": "tel.jpg",
+            "name": "ตารางแสดงรายการลงทะเบียน"
           }
         ],
-        "title": "asdasd"
+        "title": "Example UI Specification"
       },
-      "version": 1
+      "version": 3
     }
   ]
 }]
